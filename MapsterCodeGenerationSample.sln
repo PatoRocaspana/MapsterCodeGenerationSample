@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapsterCodeGenerationSample", "MapsterCodeGenerationSample\MapsterCodeGenerationSample.csproj", "{BCBA7C05-DC89-42E8-8000-10F827A92EDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCBA7C05-DC89-42E8-8000-10F827A92EDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCBA7C05-DC89-42E8-8000-10F827A92EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCBA7C05-DC89-42E8-8000-10F827A92EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCBA7C05-DC89-42E8-8000-10F827A92EDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88355E9C-5B4A-4F99-9394-90526C98F024}
+	EndGlobalSection
+EndGlobal

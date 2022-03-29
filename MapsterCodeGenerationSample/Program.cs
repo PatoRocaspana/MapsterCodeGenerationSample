@@ -1,5 +1,8 @@
+using Mapster;
+using MapsterCodeGenerationSample;
 using MapsterCodeGenerationSample.Mappers;
 using MapsterCodeGenerationSample.Repository;
+using MapsterMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +14,14 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+
+var config = new TypeAdapterConfig();
+config.Apply(new MyRegister());
+
+builder.Services.AddSingleton(config);
+
 builder.Services.AddScoped<IEmployeeMapper, EmployeeMapper>();
+builder.Services.AddScoped<IPersonalInfoMapper, PersonalInfoMapper>();
 
 var app = builder.Build();
 

@@ -17,7 +17,6 @@ builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 
 var config = new TypeAdapterConfig();
 config.Apply(new MyRegister());
-
 builder.Services.AddSingleton(config);
 
 builder.Services.AddScoped<IEmployeeMapper, EmployeeMapper>();

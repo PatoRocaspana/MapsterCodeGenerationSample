@@ -10,6 +10,7 @@ namespace MapsterCodeGenerationSample
         {
             config.NewConfig<Employee, PersonalInfoDto>()
             .Map(dest => dest.CompleteName, src => $"{src.FirstName} {src.LastName}")
+
             .Map(dest => dest.Age, src => Math.Truncate((DateTime.Now - src.BirthDate).TotalDays / 365.25))
 
             .Map(dest => dest.CarInfo,

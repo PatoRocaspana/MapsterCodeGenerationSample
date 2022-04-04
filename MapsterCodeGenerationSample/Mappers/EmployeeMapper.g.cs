@@ -23,7 +23,7 @@ namespace MapsterCodeGenerationSample.Mappers
                     Model = p1.Car.Model,
                     Year = p1.Car.Year,
                     IsOwner = p1.Car.IsOwner
-                }
+                },
             };
         }
         

@@ -12,7 +12,7 @@ namespace MapsterCodeGenerationSample.Repository
                 FirstName = "Johnny",
                 LastName = "Bravo",
                 BirthDate = new DateTime(1992, 3, 29),
-                Childs = 3,
+                Children = 3,
                 Role = new Role()
                 {
                     Id = 1,
@@ -35,7 +35,7 @@ namespace MapsterCodeGenerationSample.Repository
                 FirstName = "Angus",
                 LastName = "Young",
                 BirthDate = new DateTime(1955, 3, 31),
-                Childs = 7,
+                Children = 7,
                 Role = new Role()
                 {
                     Id = 1,

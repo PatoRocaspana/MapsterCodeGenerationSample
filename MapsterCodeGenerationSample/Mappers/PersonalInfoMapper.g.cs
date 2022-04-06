@@ -16,7 +16,7 @@ namespace MapsterCodeGenerationSample.Mappers
             {
                 Id = p1.Id,
                 CompleteName = string.Format("{0} {1}", p1.FirstName, p1.LastName),
-                Childs = (byte)p1.Childs,
+                Children = (byte)p1.Children,
                 Age = (int)Math.Truncate((DateTime.Now - p1.BirthDate).TotalDays / 365.25d),
                 CarInfo = p1.Car.IsOwner == true ? string.Format("{0} is the Owner of the {1}", p1.FirstName, p1.Car.Model) : 
                          (p1.Car.IsOwner == false ? string.Format("The {0} belongs to the company", p1.Car.Model) : null)

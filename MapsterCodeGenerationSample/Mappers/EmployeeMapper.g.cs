@@ -13,7 +13,7 @@ namespace MapsterCodeGenerationSample.Mappers
                 Id = p1.Id,
                 FirstName = p1.FirstName,
                 LastName = p1.LastName,
-                Childs = (byte)p1.Childs,
+                Children = (byte)p1.Children,
                 BirthDate = p1.BirthDate,
                 RoleId = funcMain1(p1.Role == null ? null : (int?)p1.Role.Id),
                 Car = p1.Car == null ? null : new CarDto()

@@ -15,11 +15,11 @@ namespace MapsterCodeGenerationSample
 
             .Map(dest => dest.CarInfo,
                 src => $"{src.FirstName} is the Owner of the {src.Car.Model}",
-                srcCond => srcCond.Car.IsOwner == true)
+                srcCond => srcCond.Car.IsOwner)
 
             .Map(dest => dest.CarInfo,
                 src => $"The {src.Car.Model} belongs to the company",
-                srcCond => srcCond.Car.IsOwner == false);
+                srcCond => !srcCond.Car.IsOwner);
         }
     }
 }
